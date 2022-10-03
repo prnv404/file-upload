@@ -1,7 +1,8 @@
 const multer = require('multer')
 const path = require('path')
 const imageStorage = multer.diskStorage({
-  // Destination to store image
+
+ /* Creating a storage for the image to be uploaded. */
   destination: path.join(__dirname, '../uploads'),
   filename: (req, file, cb) => {
     cb(
